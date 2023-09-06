@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pu Example Page</title>
+</head>
+
+<body>
+    <script>
+        function Song(title, artist) {
+            this.title = title;
+            this.artist = artist;
+        }
+
+        Song.prototype.play = function () {
+            console.log(`Playing: ${this.title} by ${this.artist}`);
+        };
+
+        let song1 = new Song("ฆาตกรความจำเสื่อม", "ZENTYARB");
+        let song2 = new Song("อะไรฉันก็ยอม", "SARAN x The BESTS");
+
+        song1.play();
+        song2.play();
+    </script>
+</body>
+
+</html>
